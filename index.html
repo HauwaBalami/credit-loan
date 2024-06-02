@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Checker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Check Your Loan Eligibility</h1>
+        <div id="result"></div>
+        <form id="loanForm">
+            <label for="income">Total Income:</label>
+            <input type="number" id="income" name="income" required>
+
+            <label for="currentAmount">Current Amount in Account:</label>
+            <input type="number" id="currentAmount" name="currentAmount" required>
+            
+            <label for="loanAmount">Desired Loan Amount:</label>
+            <input type="number" id="loanAmount" name="loanAmount" required>
+
+            <label for="creditHistory">6 Months Credit History:</label><br>
+        <select id="creditHistory" name="creditHistory" required>
+            <option value="">Select an option</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select><br>
+        <p id="creditHistoryError" class="error"></p><br>
+
+            <label for="lastDepositDate">Last Deposit Date:</label>
+            <input type="date" id="lastDepositDate" name="lastDepositDate" required>
+
+            <label for="lastLoanDate">Last Loan Collection Date:</label>
+            <input type="date" id="lastLoanDate" name="lastLoanDate" required>
+
+            <label for="loanRepaymentPeriodStart">Loan Repayment Period Start:</label><br>
+        <input type="date" id="loanRepaymentPeriodStart" name="loanRepaymentPeriodStart" required><br>
+        <p id="loanRepaymentPeriodStartError" class="error"></p><br>
+        <label for="loanRepaymentPeriodEnd">Loan Repayment Period End:</label>
+        <input type="date" id="loanRepaymentPeriodEnd" name="loanRepaymentPeriodEnd" required><br>
+        <p id="loanRepaymentPeriodEndError" class="error"></p>
+
+            <label for="accountType">Account Operated Type:</label>
+            <select id="accountType" name="accountType" required>
+                <option value="current">Current</option>
+                <option value="savings">Savings</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
