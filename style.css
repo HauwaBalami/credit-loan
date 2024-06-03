@@ -79,7 +79,7 @@ button:hover {
     }
     
     .container {
-        width: 130vh;
+        width: 100vh;
         margin: auto;
         padding: 15px;
         border: 1px solid #ccc;
@@ -108,7 +108,7 @@ button:hover {
     }
     
     input, select, button{
-        height: 35px;
+        height: 25px;
     }
     
     button {
