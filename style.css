@@ -79,7 +79,7 @@ button:hover {
     }
     
     .container {
-        width: 100vh;
+        width: 80vh;
         margin: auto;
         padding: 15px;
         border: 1px solid #ccc;
@@ -90,7 +90,7 @@ button:hover {
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-    }
+}
        
     
     
